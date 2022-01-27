@@ -18,20 +18,19 @@ var Pozicija;
     Pozicija[Pozicija["Admin"] = 1] = "Admin";
     Pozicija[Pozicija["DevOps"] = 2] = "DevOps";
 })(Pozicija || (Pozicija = {}));
-;
 const osoba = {
     ime: "Filip",
     prezime: "Gogic",
     godiste: 1995,
-    hobi: ['Sport', 'Programiranje'],
-    uloga: Pozicija.Admin
+    hobi: ["Sport", "Programiranje"],
+    uloga: Pozicija.Admin,
 };
 //osoba.uloga.push('admin'); //push moze iako je tuple, to je exception u typescript-u
 if (osoba.uloga === Pozicija.Admin) {
     console.log("jeste admin");
 }
 let omiljenaAktivnost;
-omiljenaAktivnost = ['Sport'];
+omiljenaAktivnost = ["Sport"];
 for (const hobby of osoba.hobi) {
     console.log(hobby.toUpperCase());
 }
