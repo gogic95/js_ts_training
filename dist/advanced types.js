@@ -16,11 +16,11 @@ result.split(" ");
 const fetchedUserData = {
     id: "user1",
     name: "LipFi",
-    job: { title: "IT Hero", description: "Sam svoj gazda" }
+    job: { title: "IT Hero", description: "Sam svoj gazda" },
 };
 console.log(fetchedUserData?.job?.title);
 const userIn = null;
-console.log(userIn ?? 100);
+console.log(userIn ?? 100); // NULLISH COALESCING
 function printEmployeeInfo(emp) {
     console.log("Name " + emp.name);
     if ("privileges" in emp) {
